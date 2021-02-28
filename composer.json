@@ -16,10 +16,9 @@
 		"slevomat/coding-standard": "~6.0"
 	},
 	"require-dev": {
-		"jakub-onderka/php-console-highlighter": "0.4",
-		"jakub-onderka/php-parallel-lint": "1.0",
-		"phing/phing": "2.16.1",
-		"phpunit/phpunit": "7.5.1"
+		"php-parallel-lint/php-parallel-lint": "1.2.0",
+		"phing/phing": "2.16.4",
+		"phpunit/phpunit": "9.5.2"
 	},
 	"autoload": {
 		"psr-4": {
