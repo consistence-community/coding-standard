@@ -1,5 +1,5 @@
 {
-	"name": "consistence/coding-standard",
+	"name": "consistence-community/coding-standard",
 	"description": "Consistence - Coding Standard - PHP Code Sniffer rules",
 	"keywords": ["coding standard", "cs", "coding", "standard", "ruleset", "phpcs", "PHPCodeSniffer", "CodeSniffer", "sniffer"],
 	"license": "MIT",
@@ -19,6 +19,9 @@
 		"php-parallel-lint/php-parallel-lint": "1.2.0",
 		"phing/phing": "2.16.4",
 		"phpunit/phpunit": "9.5.2"
+	},
+	"replace": {
+		"consistence/coding-standard": "3.10.*"
 	},
 	"autoload": {
 		"psr-4": {
