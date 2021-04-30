@@ -116,6 +116,7 @@ class ExceptionDeclarationSniff implements \PHP_CodeSniffer\Sniffs\Sniff
 
 		if (
 			$lastArgument->getTypeHint() !== '\Throwable'
+			&& $lastArgument->getTypeHint() !== '?\Throwable'
 			&& !StringHelper::endsWith($lastArgument->getTypeHint(), 'Exception')
 			&& !StringHelper::endsWith($lastArgument->getTypeHint(), 'Error')
 		) {

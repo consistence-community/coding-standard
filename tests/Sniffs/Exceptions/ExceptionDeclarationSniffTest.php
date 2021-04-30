@@ -144,6 +144,15 @@ class ExceptionDeclarationSniffTest extends \Consistence\Sniffs\TestCase
 		$this->assertNoSniffErrorInFile($resultFile);
 	}
 
+	public function testExceptionWithNullablePreviousInConstructorIsChainable(): void
+	{
+		$resultFile = $this->checkFile(__DIR__ . '/data/ChainableConstructorWithNullablePreviousException.php', [
+			'exceptionsDirectoryName' => 'data',
+		]);
+
+		$this->assertNoSniffErrorInFile($resultFile);
+	}
+
 	public function testExceptionWithCustomExceptionArgumentIsChainable(): void
 	{
 		$resultFile = $this->checkFile(__DIR__ . '/data/CustomExceptionArgumentChainableConstructorException.php', [
