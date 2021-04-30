@@ -79,7 +79,6 @@
 	<rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
 	<rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
 	<rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces"/>
-	<rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
 	<rule ref="SlevomatCodingStandard.Commenting.EmptyComment"/>
 	<rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
 	<rule ref="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment"/>
@@ -106,15 +105,6 @@
 		</properties>
 	</rule>
 	<rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
-	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword">
-		<properties>
-			<property name="keywordsToCheck" type="array">
-				<element value="T_EXTENDS"/>
-				<element value="T_IMPLEMENTS"/>
-				<element value="T_USE"/>
-			</property>
-		</properties>
-	</rule>
 	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
 	<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
 	<rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine"/>
@@ -124,10 +114,8 @@
 		<properties>
 			<property name="allowFullyQualifiedExceptions" value="true"/>
 			<property name="allowPartialUses" value="false"/>
-			<property name="fullyQualifiedKeywords" type="array">
-				<element value="T_EXTENDS"/>
-				<element value="T_IMPLEMENTS"/>
-				<element value="T_USE"/>
+			<property name="namespacesRequiredToUse" type="array">
+				<!-- to make sniff disable only partial uses -->
 			</property>
 		</properties>
 	</rule>
